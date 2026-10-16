@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f9;
+  color: #172033;
+}
+
+.brand {
+  background: #101a2c;
+  color: white;
+  text-align: center;
+  padding: 22px 12px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand-name span {
+  color: #46b7ff;
+}
+
+.brand p {
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.container {
+  width: min(92%, 460px);
+  margin: 28px auto;
+}
+
+.notice {
+  background: #fff0c2;
+  color: #754b00;
+  border: 1px solid #edcf76;
+  border-radius: 8px;
+  padding: 11px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.login-card,
+.reveal {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 28px #16233b12;
+  margin-bottom: 18px;
+}
+
+.social-icon {
+  background: #1479d2;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+h1,
+.login-card > p {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.muted,
+.small {
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 17px 0 7px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd4df;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: #1479d2;
+  color: white;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #83caff;
+  outline-offset: 2px;
+}
+
+.small {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.reveal {
+  border-top: 5px solid #e4a126;
+}
+
+.reveal h2 {
+  color: #9b351d;
+}
+
+.event {
+  background: #edf7ff;
+  border-left: 4px solid #1479d2;
+  padding: 14px;
+  margin: 18px 0;
+  overflow-wrap: anywhere;
+}
+
+.event p {
+  margin-bottom: 0;
+}
+
+.lesson {
+  background: #e9f7ef;
+  border-radius: 8px;
+  padding: 14px;
+  line-height: 1.6;
+}
+
+.secondary {
+  background: #26354d;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 12px;
+  font-size: 11px;
+  color: #667085;
+}
+
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEEKAY | Phishing Awareness Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="brand">
+    <div class="brand-name">DEEKAY <span>CYBER DEFENCE</span></div>
+    <p>WE PROTECT WHAT MATTERS.</p>
+  </header>
+
+  <main class="container">
+    <div class="notice">
+      CYBERSECURITY TRAINING SIMULATION
+    </div>
+
+    <section class="login-card">
+      <div class="social-icon" aria-hidden="true">S</div>
+      <h1>SocialSpace</h1>
+      <p class="muted">A fictional social-media training page</p>
+
+      <form id="demo-form">
+        <label for="demo-email">Demo email</label>
+        <input id="demo-email" type="email"
+          placeholder="learner@example.com" autocomplete="off"
+          required>
+
+        <label for="demo-password">Demo password</label>
+        <input id="demo-password" type="password"
+          placeholder="Enter DEMO123 only" autocomplete="off"
+          required>
+
+        <button type="submit">Simulate login</button>
+      </form>
+
+      <p class="small">
+        Use only learner@example.com and DEMO123.
+        This page does not send or store credentials.
+      </p>
+    </section>
+
+    <section id="reveal" class="reveal" hidden>
+      <h2>🚨 Training reveal</h2>
+      <p>
+        A fake login page can look convincing and trick a
+        person into entering a password.
+      </p>
+      <div class="event">
+        <strong>SIMULATED EVENT</strong>
+        <p id="event-message">Training event ready.</p>
+      </div>
+      <h3>What should you check?</h3>
+      <ul>
+        <li>Did you expect this login request?</li>
+        <li>Is the website address correct?</li>
+        <li>Did a message pressure you to act quickly?</li>
+      </ul>
+      <p class="lesson">
+        Never follow suspicious login links. Open the official
+        app or enter the official website address yourself.
+      </p>
+      <button id="reset-button" type="button" class="secondary">
+        Reset demonstration
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    DEEKAY CYBER DEFENCE · WE PROTECT WHAT MATTERS.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
