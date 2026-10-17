@@ -9,69 +9,84 @@
 </head>
 <body>
   <header class="brand">
-    <div class="brand-name">DEEKAY <span>CYBER DEFENCE</span></div>
+    <h2>DEEKAY <span>CYBER DEFENCE</span></h2>
     <p>WE PROTECT WHAT MATTERS.</p>
   </header>
 
   <main class="container">
-    <div class="notice">
-      CYBERSECURITY TRAINING SIMULATION
-    </div>
+    <p class="notice">CYBERSECURITY TRAINING SIMULATION</p>
 
-    <section class="login-card">
-      <div class="social-icon" aria-hidden="true">S</div>
+    <section class="card">
+      <div class="logo">S</div>
       <h1>SocialSpace</h1>
-      <p class="muted">A fictional social-media training page</p>
+      <p>A fictional social-media login page</p>
 
       <form id="demo-form">
-        <label for="demo-email">Demo email</label>
-        <input id="demo-email" type="email"
-          placeholder="learner@example.com" autocomplete="off"
-          required>
+        <label for="email">Demo email</label>
+        <input id="email" type="email"
+          placeholder="learner@example.com" required>
 
-        <label for="demo-password">Demo password</label>
-        <input id="demo-password" type="password"
-          placeholder="Enter DEMO123 only" autocomplete="off"
-          required>
+        <label for="password">Demo password</label>
+        <input id="password" type="password"
+          placeholder="Enter DEMO123 only" required>
 
         <button type="submit">Simulate login</button>
       </form>
 
-      <p class="small">
-        Use only learner@example.com and DEMO123.
-        This page does not send or store credentials.
-      </p>
+      <small>Use demo details only. Never enter a real password.</small>
     </section>
 
-    <section id="reveal" class="reveal" hidden>
-      <h2>🚨 Training reveal</h2>
-      <p>
-        A fake login page can look convincing and trick a
-        person into entering a password.
+    <section id="reveal" class="card" hidden>
+      <h2>🚨 Your security lesson</h2>
+      <p>This was a simulation. No password was saved or sent.</p>
+      <button id="reset" type="button">Try again</button>
+    </section>
+
+    <section class="card dashboard">
+      <h2>Security Dashboard</h2>
+      <p class="dashboard-label">
+        SIMULATED EVENTS · THIS BROWSER ONLY
       </p>
-      <div class="event">
-        <strong>SIMULATED EVENT</strong>
-        <p id="event-message">Training event ready.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <span>Demo attempts</span>
+          <strong id="attempt-count">0</strong>
+        </div>
+        <div class="stat">
+          <span>Real passwords stored</span>
+          <strong>0</strong>
+        </div>
       </div>
-      <h3>What should you check?</h3>
-      <ul>
-        <li>Did you expect this login request?</li>
-        <li>Is the website address correct?</li>
-        <li>Did a message pressure you to act quickly?</li>
-      </ul>
-      <p class="lesson">
-        Never follow suspicious login links. Open the official
-        app or enter the official website address yourself.
+
+      <p id="empty-message">No demo events yet. Try the demo login above.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Demo email</th>
+              <th>Password</th>
+              <th>Event</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="event-list"></tbody>
+        </table>
+      </div>
+
+      <p class="safety-note">
+        Training only. Passwords are never recorded. Events shown here
+        stay in this browser and are not a list of real accounts.
       </p>
-      <button id="reset-button" type="button" class="secondary">
-        Reset demonstration
+
+      <button id="clear-events" class="secondary" type="button">
+        Clear demo events
       </button>
     </section>
   </main>
 
-  <footer>
-    DEEKAY CYBER DEFENCE · WE PROTECT WHAT MATTERS.
-  </footer>
+  <footer>DEEKAY CYBER DEFENCE · WE PROTECT WHAT MATTERS.</footer>
   <script src="script.js"></script>
 </body>
 </html>
