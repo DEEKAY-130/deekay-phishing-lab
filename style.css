@@ -1,153 +1,140 @@
-
-* { box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f4f9;
-  color: #172033;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
 }
 
-.brand {
-  background: #101a2c;
-  color: white;
-  text-align: center;
-  padding: 22px 10px;
+.main {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
-.brand h2 { margin: 0; }
-.brand span { color: #46b7ff; }
-.brand p { font-size: 11px; letter-spacing: 2px; }
-
-.container {
-  width: min(94%, 850px);
-  margin: 28px auto;
+.left {
+    width: 100%;
+    text-align: center;
 }
 
-.notice {
-  background: #fff0c2;
-  padding: 12px;
-  text-align: center;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: bold;
+.left h1 {
+    color: #1877f2;
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-.card {
-  background: white;
-  border-radius: 14px;
-  padding: 25px;
-  margin: 16px 0;
-  box-shadow: 0 8px 28px #16233b12;
+.left p {
+    font-size: 22px;
+    color: #1c1e21;
 }
 
-.logo {
-  margin: auto;
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  background: #1479d2;
-  color: white;
-  border-radius: 12px;
-  font-size: 26px;
-  font-weight: bold;
+.right {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
-h1, .card > p, small { text-align: center; }
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
 
-label {
-  display: block;
-  font-weight: bold;
-  margin: 16px 0 7px;
+.demo-label {
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 input {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #ccd4df;
-  border-radius: 8px;
-  font-size: 16px;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
 button {
-  width: 100%;
-  margin-top: 18px;
-  padding: 14px;
-  background: #1479d2;
-  color: white;
-  border: 0;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1877f2;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-button.secondary {
-  background: #263449;
+a {
+    display: block;
+    margin: 18px;
+    color: #1877f2;
+    text-decoration: none;
 }
 
-small {
-  display: block;
-  margin-top: 15px;
-  color: #667085;
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
 }
 
-.dashboard-label {
-  color: #1479d2;
-  font-weight: bold;
-  font-size: 12px;
+.create-account {
+    background: #36a420;
+    width: auto;
+    padding: 14px 20px;
+    font-size: 15px;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 20px 0;
+.disclaimer {
+    color: #d93025;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 1.5;
 }
 
-.stat {
-  background: #edf7ff;
-  padding: 16px;
-  border-radius: 10px;
-}
-
-.stat span, .stat strong { display: block; }
-.stat span { font-size: 13px; color: #475467; }
-.stat strong { font-size: 28px; margin-top: 8px; }
-
-.table-wrap { overflow-x: auto; }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-th, td {
-  padding: 12px 10px;
-  text-align: left;
-  border-bottom: 1px solid #e4e7ec;
-}
-
-th { background: #f8fafc; }
-
-.safety-note {
-  background: #fff0c2;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-[hidden] { display: none !important; }
-
-footer {
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 11px;
-}
+/* MOBILE */
 
 @media (max-width: 480px) {
-  .card { padding: 18px; }
-  th, td { padding: 10px 7px; }
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .left h1 {
+        font-size: 38px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .login-box {
+        padding: 18px;
+    }
+
+    .right {
+        max-width: 100%;
+    }
+
+    .disclaimer {
+        font-size: 11px;
+    }
 }
